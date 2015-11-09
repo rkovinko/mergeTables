@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      dTable
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="static/css/style.css" media="all" />
+    <script src="static/lib/jQuery-1.10.1.js" type="text/javascript"></script>
+    <script src="static/script/dTable.js" type="text/javascript"></script>
+  </head>
+  <body>
+  <div class="page-wrapper">    
+    <div class="table-wrapper">
+      <table class="dTable 1">
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+        </tr>
+      </table>
+    </div>
+    
+    <div class="table-wrapper">
+      <table class="dTable 2">
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+        </tr>
+      </table>
+    </div>
+    
+    <div class="table-wrapper">
+      <table class="dTable 3">
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+        </tr>
+      </table>
+    </div>
+    <a href="javascript:void(0);" class="on-button">On</a>
+    <a href="javascript:void(0);" class="off-button">off</a>
+  </div>
+    <script>
+      $(function(){
+        $('.on-button').on('click', function(){
+          $dTableStructure.init({
+            off : false
+          })
+        })
+        $('.off-button').on('click', function(){
+          $dTableStructure.clearEvents();
+        })
+      })
+    </script>
+  </body>
+</html>
